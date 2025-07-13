@@ -1,58 +1,36 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Watch Video</title>
-  <link rel="stylesheet" href="style.css" />
-	<!--<script type='text/javascript' src='//pl27151493.profitableratecpm.com/29/09/7e/29097e714b74636efbd19d2cf4b9679c.js'></script>
--->
-</head>
-<body>
+body {
+  font-family: Arial, sans-serif;
+  background: #f2f2f2;
+  text-align: center;
+  padding-top: 50px;
+}
 
-<script type="text/javascript">
-	atOptions = {
-		'key' : '8240c59ae61a0b498b98ac75db068acc',
-		'format' : 'iframe',
-		'height' : 90,
-		'width' : 728,
-		'params' : {}
-	};
-</script>
-<script type="text/javascript" src="//www.highperformanceformat.com/8240c59ae61a0b498b98ac75db068acc/invoke.js"></script>
-  
-  <div class="container">
-    <button id="watchBtn">Click Here to Watch Video</button>
-    <div class="video-wrapper" id="videoWrapper" style="display: none;">
-      <video id="mainVideo" width="640" controls controlsList="nodownload" oncontextmenu="return false;">
-  <source src="video.mp4" type="video/mp4" />
-  Your browser does not support the video tag.
-</video>
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+}
 
-    </div>
-  </div>
+button {
+  background-color: #007bff;
+  color: white;
+  padding: 20px 40px;       /* Increased padding */
+  border: none;
+  border-radius: 10px;      /* Slightly larger radius */
+  font-size: 44px;          /* Larger text */
+  cursor: pointer;
+  transition: background 0.3s ease;
+  min-width: 440px;         /* Optional: ensures wide button */
+  min-height: 140px;         /* Optional: makes it taller */
+}
 
-  <script>
-    let clicked = false;
-    document.getElementById("watchBtn").addEventListener("click", function () {
-      if (!clicked) {
-        // First click – open ad in new tab
-        window.open("https://www.profitableratecpm.com/jh9ri3zda4?key=5f1f19d4475661693e01257b33a89296", "_blank"); // Replace with your ad link
-        clicked = true;
-      } else {
-        // Second click – show video
-        document.getElementById("videoWrapper").style.display = "block";
-        this.style.display = "none";
-        document.getElementById("mainVideo").play();
-      }
-    });
-  </script>
 
-<script async="async" data-cfasync="false" src="//pl27151424.profitableratecpm.com/f29a53b6b88cc137a5ae7e69c2e7cd2b/invoke.js"></script>
-<div id="container-f29a53b6b88cc137a5ae7e69c2e7cd2b"></div>
+button:hover {
+  background-color: #0056b3;
+}
 
-	<!--<script type='text/javascript' src='//pl27151532.profitableratecpm.com/9a/3a/f6/9a3af67d2a86a6249dcd9226027fb8f7.js'></script>
-social banner-->
-	
-</body>
-</html>
+video {
+  margin-top: 30px;
+  max-width: 100%;
+  border: 2px solid #333;
+  border-radius: 8px;
+}
